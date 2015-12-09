@@ -14,8 +14,6 @@ void swap(int *a, int *b)
 
 int sampleArray[DEFAULT_SIZE] = {1, 0, 2, 9, 3, 6, 5, 7, 4, 2};
 
-int inputArray[DEFAULT_SIZE]  = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-
 int randomArray[DEFAULT_SIZE];
 
 
@@ -73,6 +71,18 @@ int main()
 	generateRandomArray(randomArray);
 	printi(randomArray, DEFAULT_SIZE);
 	gnomesort(randomArray, DEFAULT_SIZE);
+	printi(randomArray, DEFAULT_SIZE);
+
+	printf("\nSelect sort \n");	
+	generateRandomArray(randomArray);
+	printi(randomArray, DEFAULT_SIZE);
+	selectsort(randomArray, DEFAULT_SIZE);
+	printi(randomArray, DEFAULT_SIZE);
+
+	printf("\nInsert sort \n");	
+	generateRandomArray(randomArray);
+	printi(randomArray, DEFAULT_SIZE);
+	insertsort(randomArray, DEFAULT_SIZE);
 	printi(randomArray, DEFAULT_SIZE);
 
 
